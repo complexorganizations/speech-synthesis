@@ -4,10 +4,15 @@ import (
 	"github.com/hegedustibor/htgo-tts"
 	"io/ioutil"
 	"log"
+	"os"
+)
+
+var (
+	textFilePath = os.Args[1]
 )
 
 func main() {
-	content, err := ioutil.ReadFile("Text-In-File.txt")
+	content, err := ioutil.ReadFile(textFilePath)
 	if err != nil {
 		log.Fatal(err)
 	}
