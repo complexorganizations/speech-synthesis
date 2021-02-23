@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	content, err := ioutil.ReadFile("fileName")
+	content, err := ioutil.ReadFile("Text-In-File.txt")
 	if err != nil {
 		log.Fatal(err)
 	}
