@@ -3,6 +3,7 @@ package main
 import (
 	"github.com/hegedustibor/htgo-tts"
 	"io/ioutil"
+	"log"
 )
 
 func main() {
@@ -11,5 +12,5 @@ func main() {
 		log.Fatal(err)
 	}
 	speech := htgotts.Speech{Folder: "audio", Language: "en"}
-	speech.Speak(content)
+	speech.Speak(string(content))
 }
