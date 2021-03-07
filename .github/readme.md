@@ -1,6 +1,6 @@
 ### speech-synthesis
 
-For no cost, you can create your own audio book.
+For no cost, you can create your own audiobook.
 
 ---
 ### Installation
@@ -29,37 +29,7 @@ speech-synthesis [PATH]
 
 ---
 ### Features
-- 
-- 
-- 
-- 
-
----
-### Q&A
-
-How
-- 
-- 
-- 
-- 
-
-Which
-- 
-- 
-- 
--
-
-Is
-- 
-- 
-- 
--
-
-How 
-- 
-- 
-- 
--
+- Turn your ebook into an audio book.
 
 ---
 ### Author
