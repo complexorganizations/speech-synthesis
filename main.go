@@ -26,15 +26,13 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	// Perform the text-to-speech request on the text input with the selected
-	// voice parameters and audio file type.
+	// Perform the text-to-speech request on the text input with the selected, voice parameters and audio file type.
 	req := texttospeechpb.SynthesizeSpeechRequest{
 		// Set the text input to be synthesized.
 		Input: &texttospeechpb.SynthesisInput{
 			InputSource: &texttospeechpb.SynthesisInput_Text{Text: string(content)},
 		},
-		// Build the voice request, select the language code ("en-US") and the SSML
-		// voice gender ("neutral").
+		// Build the voice request, select the language code ("en-US") and the SSML, voice gender ("neutral").
 		Voice: &texttospeechpb.VoiceSelectionParams{
 			LanguageCode: "en-US",
 			SsmlGender:   texttospeechpb.SsmlVoiceGender_NEUTRAL,
