@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/hegedustibor/htgo-tts"
+	"google.golang.org/api/texttospeech/v1"
 	"io/ioutil"
 	"log"
 	"os"
