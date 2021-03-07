@@ -17,6 +17,16 @@ export GOOGLE_APPLICATION_CREDENTIALS="[PATH]"
 $env:GOOGLE_APPLICATION_CREDENTIALS="[PATH]"
 ```
 
+Download the latest `speech-synthesis` binary
+```
+go get -v github.com/complexorganizations/speech-synthesis
+```
+
+Using `speech-synthesis` binary, you can turn your text into speech
+```
+speech-synthesis [PATH]
+```
+
 ---
 ### Features
 - 
