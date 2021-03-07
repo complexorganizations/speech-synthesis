@@ -1,5 +1,3 @@
-
-// Command quickstart generates an audio file with the content "Hello, World!".
 package main
 
 import (
@@ -15,12 +13,10 @@ import (
 func main() {
         // Instantiates a client.
         ctx := context.Background()
-
         client, err := texttospeech.NewClient(ctx)
         if err != nil {
                 log.Fatal(err)
         }
-
         // Perform the text-to-speech request on the text input with the selected
         // voice parameters and audio file type.
         req := texttospeechpb.SynthesizeSpeechRequest{
@@ -39,12 +35,10 @@ func main() {
                         AudioEncoding: texttospeechpb.AudioEncoding_MP3,
                 },
         }
-
         resp, err := client.SynthesizeSpeech(ctx, &req)
         if err != nil {
                 log.Fatal(err)
         }
-
         // The resp's AudioContent is binary.
         filename := "output.mp3"
         err = ioutil.WriteFile(filename, resp.AudioContent, 0644)
