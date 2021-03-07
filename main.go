@@ -50,7 +50,7 @@ func main() {
 		log.Fatal(err)
 	}
 	// The resp's AudioContent is binary.
-	filename := "output.mp3"
+	filename := fmt.Sprintf(textFilePath, ".mp3")
 	err = ioutil.WriteFile(filename, resp.AudioContent, 0644)
 	if err != nil {
 		log.Fatal(err)
