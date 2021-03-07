@@ -1,7 +1,21 @@
 ### speech-synthesis
 
-***speech-synthesis is not yet complete. You should not rely on this code. It has not undergone proper degrees of security auditing and the protocol is still subject to change. We're working toward a stable 1.0.0 release, but that time has not yet come. There are experimental snapshots tagged with "0.0.0.MM-DD-YYYY", but these should not be considered real releases and they may contain security vulnerabilities (which would not be eligible for CVEs, since this is pre-release snapshot software). If you are packaging speech-synthesis, you must keep up to date with the snapshots.***
+For no cost, you can create your own audio book.
 
+---
+### Installation
+
+Lets generate GCP credentials from `https://cloud.google.com/iam/docs/creating-managing-service-accounts`, Once you have your service account, your ready.
+
+#### Unix
+```
+export GOOGLE_APPLICATION_CREDENTIALS="[PATH]"
+```
+
+#### Windows
+```
+$env:GOOGLE_APPLICATION_CREDENTIALS="[PATH]"
+```
 
 ---
 ### Features
