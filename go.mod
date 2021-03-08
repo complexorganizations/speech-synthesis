@@ -1,6 +1,6 @@
-module github.com/Prajwal-Koirala/paper-to-speech
+module github.com/complexorganizations/speech-synthesis
 
-go 1.15
+go 1.16
 
 require (
 	cloud.google.com/go v0.78.0
