@@ -1,22 +1,65 @@
 package main
 
 import (
-	texttospeech "cloud.google.com/go/texttospeech/apiv1"
 	"context"
 	"fmt"
-	texttospeechpb "google.golang.org/genproto/googleapis/cloud/texttospeech/v1"
 	"io/ioutil"
 	"log"
 	"os"
+	"path/filepath"
+
+	speech "cloud.google.com/go/speech/apiv1"
+	texttospeech "cloud.google.com/go/texttospeech/apiv1"
+
+	speechpb "google.golang.org/genproto/googleapis/cloud/speech/v1"
+	texttospeechpb "google.golang.org/genproto/googleapis/cloud/texttospeech/v1"
 )
 
-var (
-	textFilePath = os.Args[1]
-)
+var filePath = os.Args[1]
 
 func main() {
+	switch filepath.Ext(filePath) {
+	case ".mp4":
+		speechToText()
+	case ".txt":
+		textToSpeech()
+	default:
+		//
+	}
+}
+
+func speechToText() {
+	ctx := context.Background()
+	// Creates a client.
+	client, err := speech.NewClient(ctx)
+	if err != nil {
+		log.Fatalf("Failed to create client: %v", err)
+	}
+	// Detects speech in the audio file.
+	resp, err := client.Recognize(ctx, &speechpb.RecognizeRequest{
+		Config: &speechpb.RecognitionConfig{
+			Encoding:        speechpb.RecognitionConfig_LINEAR16,
+			SampleRateHertz: 16000,
+			LanguageCode:    "en-US",
+		},
+		Audio: &speechpb.RecognitionAudio{
+			AudioSource: &speechpb.RecognitionAudio_Uri{Uri: filePath},
+		},
+	})
+	if err != nil {
+		log.Fatalf("failed to recognize: %v", err)
+	}
+	// Prints the results.
+	for _, result := range resp.Results {
+		for _, alt := range result.Alternatives {
+			fmt.Printf("\"%v\" (confidence=%3f)\n", alt.Transcript, alt.Confidence)
+		}
+	}
+}
+
+func textToSpeech() {
 	// Read the file
-	content, err := ioutil.ReadFile(textFilePath)
+	content, err := ioutil.ReadFile(filePath)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -47,7 +90,7 @@ func main() {
 		log.Fatal(err)
 	}
 	// The resp's AudioContent is binary.
-	filename := fmt.Sprintf(textFilePath, ".mp3")
+	filename := fmt.Sprintf(filePath, ".mp3")
 	err = ioutil.WriteFile(filename, resp.AudioContent, 0644)
 	if err != nil {
 		log.Fatal(err)
