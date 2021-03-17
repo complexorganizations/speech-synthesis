@@ -21,7 +21,7 @@ func main() {
 	switch filepath.Ext(filePath) {
 	case ".mp4":
 		speechToText()
-	case ".txt":
+	case ".txt", ".md":
 		textToSpeech()
 	default:
 		//
