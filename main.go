@@ -19,12 +19,12 @@ var filePath = os.Args[1]
 
 func main() {
 	switch filepath.Ext(filePath) {
-	case ".mp4":
+	case ".mp3":
 		speechToText()
-	case ".txt", ".md":
+	case ".txt":
 		textToSpeech()
 	default:
-		//
+		log.Fatalf("Error: This %s is not supported.\n", filePath)
 	}
 }
 
