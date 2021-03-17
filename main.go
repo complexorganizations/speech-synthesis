@@ -24,7 +24,7 @@ func main() {
 	case ".txt":
 		textToSpeech()
 	default:
-		log.Fatalf("Error: This %s is not supported.\n", filePath)
+		log.Fatalf("Error: %s is not supported.\n", filePath)
 	}
 }
 
