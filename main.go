@@ -14,7 +14,8 @@ import (
 	speechpb "google.golang.org/genproto/googleapis/cloud/speech/v1"
 	texttospeechpb "google.golang.org/genproto/googleapis/cloud/texttospeech/v1"
 )
-var os.Args[1] string
+
+var filePath string
 
 func init() {
 	if len(os.Args) > 1 {
