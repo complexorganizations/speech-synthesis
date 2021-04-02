@@ -20,6 +20,8 @@ var filePath string
 func init() {
 	if len(os.Args) > 1 {
 		filePath = os.Args[1]
+	} else {
+		os.Exit(0)
 	}
 }
 
