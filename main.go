@@ -1,18 +1,16 @@
 package main
 
 import (
+	speech "cloud.google.com/go/speech/apiv1"
+	texttospeech "cloud.google.com/go/texttospeech/apiv1"
 	"context"
 	"fmt"
+	speechpb "google.golang.org/genproto/googleapis/cloud/speech/v1"
+	texttospeechpb "google.golang.org/genproto/googleapis/cloud/texttospeech/v1"
 	"io/ioutil"
 	"log"
 	"os"
 	"path/filepath"
-
-	speech "cloud.google.com/go/speech/apiv1"
-	texttospeech "cloud.google.com/go/texttospeech/apiv1"
-
-	speechpb "google.golang.org/genproto/googleapis/cloud/speech/v1"
-	texttospeechpb "google.golang.org/genproto/googleapis/cloud/texttospeech/v1"
 )
 
 var filePath string
