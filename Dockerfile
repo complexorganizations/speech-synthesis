@@ -1,5 +1,5 @@
 FROM golang:latest
-LABEL maintainer="John Doe <example@example.com>"
+LABEL maintainer="Prajwal Koirala <prajwalkoirala23@protonmail.com>"
 WORKDIR /app
 COPY . .
 RUN go mod download
