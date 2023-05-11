@@ -544,8 +544,8 @@ cloud.google.com/go/talent v1.5.0/go.mod h1:G+ODMj9bsasAEJkQSzO2uHQWXHHXUomArjWQ
 cloud.google.com/go/texttospeech v1.4.0/go.mod h1:FX8HQHA6sEpJ7rCMSfXuzBcysDAuWusNNNvN9FELDd8=
 cloud.google.com/go/texttospeech v1.5.0/go.mod h1:oKPLhR4n4ZdQqWKURdwxMy0uiTS1xU161C8W57Wkea4=
 cloud.google.com/go/texttospeech v1.6.0/go.mod h1:YmwmFT8pj1aBblQOI3TfKmwibnsfvhIBzPXcW4EBovc=
-cloud.google.com/go/texttospeech v1.6.1 h1:fuvinFIvfdzL4MjZpuwvxTxkUzt59z8wPNy/h3XwYJo=
-cloud.google.com/go/texttospeech v1.6.1/go.mod h1:VSP5kS2iI1b+JsptxouTYN7q8KNPU+fTWN5ocakkq98=
+cloud.google.com/go/texttospeech v1.6.2 h1:NXozk2+arVWiAOrwiMo0lXkYs6zou9MByMpyMlB2ip4=
+cloud.google.com/go/texttospeech v1.6.2/go.mod h1:VSP5kS2iI1b+JsptxouTYN7q8KNPU+fTWN5ocakkq98=
 cloud.google.com/go/tpu v1.3.0/go.mod h1:aJIManG0o20tfDQlRIej44FcwGGl/cD0oiRyMKG19IQ=
 cloud.google.com/go/tpu v1.4.0/go.mod h1:mjZaX8p0VBgllCzF6wcU2ovUXN9TONFLd7iz227X2Xg=
 cloud.google.com/go/tpu v1.5.0/go.mod h1:8zVo1rYDFuW2l4yZVY0R0fb/v44xLh3llq7RuV61fPM=
