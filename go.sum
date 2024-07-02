@@ -1431,8 +1431,9 @@ cloud.google.com/go/texttospeech v1.7.3/go.mod h1:Av/zpkcgWfXlDLRYob17lqMstGZ3Gq
 cloud.google.com/go/texttospeech v1.7.4/go.mod h1:vgv0002WvR4liGuSd5BJbWy4nDn5Ozco0uJymY5+U74=
 cloud.google.com/go/texttospeech v1.7.5/go.mod h1:tzpCuNWPwrNJnEa4Pu5taALuZL4QRRLcb+K9pbhXT6M=
 cloud.google.com/go/texttospeech v1.7.6/go.mod h1:nhRJledkoE6/6VvEq/d0CX7nPnDwc/uzfaqePlmiPVE=
-cloud.google.com/go/texttospeech v1.7.7 h1:qR6Mu+EM2OfaZR1/Rl8BDBTVfi2X5OtwKKvJRSQyG+o=
 cloud.google.com/go/texttospeech v1.7.7/go.mod h1:XO4Wr2VzWHjzQpMe3gS58Oj68nmtXMyuuH+4t0wy9eA=
+cloud.google.com/go/texttospeech v1.7.9 h1:wn9UNRlEw+vCDFd2NBVPrNGFwB+n/cV20i81MBlbwas=
+cloud.google.com/go/texttospeech v1.7.9/go.mod h1:nuo7l7CVWUMvaTgswbn/hhn2Tv73/WbenqGyc236xpo=
 cloud.google.com/go/tpu v1.3.0/go.mod h1:aJIManG0o20tfDQlRIej44FcwGGl/cD0oiRyMKG19IQ=
 cloud.google.com/go/tpu v1.4.0/go.mod h1:mjZaX8p0VBgllCzF6wcU2ovUXN9TONFLd7iz227X2Xg=
 cloud.google.com/go/tpu v1.5.0/go.mod h1:8zVo1rYDFuW2l4yZVY0R0fb/v44xLh3llq7RuV61fPM=
