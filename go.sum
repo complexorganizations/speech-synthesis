@@ -1481,8 +1481,8 @@ cloud.google.com/go/speech v1.21.1/go.mod h1:E5GHZXYQlkqWQwY5xRSLHw2ci5NMQNG52Ff
 cloud.google.com/go/speech v1.22.1/go.mod h1:s8C9OLTemdGb4FHX3imHIp5AanwKR4IhdSno0Cg1s7k=
 cloud.google.com/go/speech v1.23.1/go.mod h1:UNgzNxhNBuo/OxpF1rMhA/U2rdai7ILL6PBXFs70wq0=
 cloud.google.com/go/speech v1.23.3/go.mod h1:u7tK/jxhzRZwZ5Nujhau7iLI3+VfJKYhpoZTjU7hRsE=
-cloud.google.com/go/speech v1.23.4 h1:sXHeIuwctDNFc7OF3FJhHZ5HVFqRBWWVRDNMNy6pemI=
-cloud.google.com/go/speech v1.23.4/go.mod h1:pv5VPKuXsZStCnTBImQP8HDfQHgG4DxJSlDyx5Kcwak=
+cloud.google.com/go/speech v1.24.0 h1:3j+WpeBY57C0FDJxg317vpKgOLjL/kNxlcNPGSqXkqE=
+cloud.google.com/go/speech v1.24.0/go.mod h1:HcVyIh5jRXM5zDMcbFCW+DF2uK/MSGN6Rastt6bj1ic=
 cloud.google.com/go/storage v1.0.0/go.mod h1:IhtSnM/ZTZV8YYJWCY8RULGVqBDmpoyjwiyrjsg+URw=
 cloud.google.com/go/storage v1.5.0/go.mod h1:tpKbwo567HUNpVclU5sGELwQWBDZ8gh0ZeosJ0Rtdos=
 cloud.google.com/go/storage v1.6.0/go.mod h1:N7U0C8pVQ/+NIKOBQyamJIeKQKkZ+mxpohlUTyfDhBk=
